@@ -42,7 +42,7 @@ body .quote-container .quote-text .fa-quote-left {
   font-size: 4rem;
 }
 
-body .quote-container .quote-text .long-quote {
+body .quote-container .long-quote {
   font-size: 2rem;
 }
 
@@ -112,6 +112,38 @@ body button:active {
     font-size: 1rem;
     font-weight: 400;
     font-style: italic;
+  }
+}
+
+body .loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #333;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 /*# sourceMappingURL=style.css.map */
